@@ -80,12 +80,6 @@ module "alb" {
   ]
   }
 
-  tags = {
-    Environment = "Dev"
-    Project     = "linkedin"
-  }
-
-
 module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "5.1.2"
